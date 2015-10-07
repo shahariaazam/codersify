@@ -16,7 +16,7 @@ get_header();
         <noscript>
             <div class="no-js-menu">
                 <ul>
-                    <li><i class="entypo-home"></i><a href="/">Home</a></li>
+                    <li><i class="entypo-home"></i><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
                     <li><i class="entypo-user"></i><a href="<?php echo get_the_author_meta('user_url',
                             1); ?>"><?php echo get_the_author_meta('display_name', 1); ?></a></li>
                 </ul>
