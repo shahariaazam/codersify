@@ -6,14 +6,13 @@
                 <div class="post-preview col-xs-12  no-gutter">
 
                     <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+                    <p class="meta">
+                        Published at <?php the_time('F jS, Y') ?> in
+                        <?php the_category(', ') ?>
+                    </p>
 
                     <p style="text-align: justify">
                         <?php the_content() ?>
-                    </p>
-
-                    <p class="meta">
-                        Published on <?php the_time('F jS, Y') ?>
-                        <?php the_category(', ') ?>
                     </p>
                 </div>
 
