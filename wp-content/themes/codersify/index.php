@@ -19,10 +19,7 @@
                 <!-- Pagination links -->
                 <nav>
                     <ul class="pager">
-                        <li class="previous"><a href="{{ paginator.previous_page_path }}"><span
-                                    aria-hidden="true">&larr;</span> Previous Page </a></li>
-                        <li class="next"><a href="{{ paginator.next_page_path }}">Next Page <span
-                                    aria-hidden="true">&rarr;</span></a></li>
+                        <?php posts_nav_link(); ?>
                     </ul>
                 </nav>
 
