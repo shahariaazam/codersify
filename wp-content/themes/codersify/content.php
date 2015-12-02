@@ -6,6 +6,7 @@
                 <div class="post-preview col-xs-12  no-gutter">
 
                     <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+
                     <p class="meta">
                         Published at <?php the_time('F jS, Y') ?> in
                         <?php the_category(', ') ?>
