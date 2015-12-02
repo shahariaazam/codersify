@@ -10,19 +10,28 @@ get_header();
         <span class="bar"></span>
     </span>
 
-    <div class="hero-image hero-a-great-story" style="">
+<?php
+//Featured image in single post page
+    $screen = wp_get_attachment_url( get_post_thumbnail_id($post->ID));;
+?>
 
-        <!-- if the user has javascript disabled they can still use the menu -->
-        <noscript>
-            <div class="no-js-menu">
-                <ul>
-                    <li><i class="entypo-home"></i><a href="/">Home</a></li>
-                    <li><i class="entypo-user"></i><a href="<?php echo get_the_author_meta('user_url',
-                            1); ?>"><?php echo get_the_author_meta('display_name', 1); ?></a></li>
-                </ul>
-            </div>
-        </noscript>
-        <!-- end no script -->
+<?php if (isset($screen) && !empty($screen)): ?>
+    <div class="hero-image hero-a-great-story" style="background-image: url(<?php echo $screen; ?>);">
+<?php else: ?>
+    <div class="hero-image hero-a-great-story">
+<?php endif; ?>
+
+    <!-- if the user has javascript disabled they can still use the menu -->
+    <noscript>
+        <div class="no-js-menu">
+            <ul>
+                <li><i class="entypo-home"></i><a href="/">Home</a></li>
+                <li><i class="entypo-user"></i><a href="<?php echo get_the_author_meta('user_url',
+                        1); ?>"><?php echo get_the_author_meta('display_name', 1); ?></a></li>
+            </ul>
+        </div>
+    </noscript>
+    <!-- end no script -->
 
     </div>
 
@@ -45,7 +54,7 @@ get_header();
                         <h1><?php the_title(); ?></h1>
 
                         <p class="meta">
-                            Published on <?php the_time('F jS, Y') ?> <br>
+                            Published on <?php the_time('F jS, Y') ?> <br><?php edit_post_link(); ?>
                             <!-- AddThis Button BEGIN -->
                         </p>
 
