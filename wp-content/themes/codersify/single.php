@@ -67,6 +67,11 @@ get_header();
 
                     <?php comments_template(); ?>
 
+                    <hr>
+                    &copy; All rights reserved by <a href="<?php echo get_the_author_meta('user_url',
+                        1); ?>"><?php the_author() ?></a> <br>
+                    Powered by <a target="_blank" href="https://wordpress.org/">Wordpress</a> | Theme developed by <a target="_blank" href="https://twitter.com/shaharia">@shaharia</a> with <span style="font-size: 16px; color: red;">❤</span>
+
                 <?php endif; ?>
             </div>
             <!-- main-content/col -->

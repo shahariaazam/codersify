@@ -2376,3 +2376,8 @@ https://github.com/mojombo/tpw/blob/master/css/syntax.css */
 .post a, .single-content a {
   color: #E26363;
 }
+
+.home-footer{
+  font-size: 12px;
+  color: #B1A7A7;
+}
