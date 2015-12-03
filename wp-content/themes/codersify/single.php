@@ -62,11 +62,12 @@ get_header();
                         <h1><?php the_title(); ?></h1>
 
                         <p class="meta">
-                            Published on <?php the_time('F jS, Y') ?> <br><?php edit_post_link(); ?>
+                            Published on <?php the_time('F jS, Y') ?> <br><?php edit_post_link(); ?>  in
+                            <?php the_category(', ') ?> <?php the_tags();?>
                             <!-- AddThis Button BEGIN -->
                         </p>
 
-                        <p>
+                        <p id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                             <?php echo the_content() ?>
                         </p>
 

@@ -23,7 +23,7 @@
                     <?php get_template_part('content', get_post_format()); ?>
                 </div>
                 <!-- Home page posts -->
-                <div class="pagination-heading">Pages &raquo; </div>
+                <div class="pagination-heading">Pages &raquo; <?php wp_link_pages(); ?> </div>
                 <!-- Pagination links -->
                 <nav>
                     <ul class="pager">

@@ -1,12 +1,49 @@
 /*
 Theme Name: Codersify
-Theme URI: https://wordpress.org/themes/codersify/
+Theme URI: https://github.com/shahariaazam/codersify/
 Author: Shaharia Azam
 Author URI: https://github.com/shahariaazam
 Description: Codersify is the most simplistic wordpress theme for programmers and tech geeks. Focused on simplicity not the design.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: programmers, coders, geeks, tech, white, simple
+Tags: white
 Text Domain: codersify
 */
+
+
+.wp-caption{
+
+}
+.wp-caption-text{
+
+}
+
+.sticky{
+
+}
+
+.screen-reader-text{
+
+}
+
+.gallery-caption{
+
+}
+
+.bypostauthor{
+
+}
+
+.alignright{
+
+}
+
+.alignleft{
+
+}
+
+.aligncenter{
+
+}
+
