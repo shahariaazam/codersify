@@ -4,9 +4,6 @@
  * @Contributors https://github.com/shahariaazam/codersify/graphs/contributors
  * @URI https://github.com/shahariaazam/codersify
  */
-?>
-
-<?php
 
 add_theme_support( 'post-thumbnails' );
 
