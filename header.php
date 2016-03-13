@@ -26,11 +26,7 @@
     <script
         src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
-    <script>
-        window.jQuery || document.write('<script src="<?php echo esc_url( get_template_directory_uri() ); ?>js/vendor/jquery-1.10.1.min.js"><\/script>')
-    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/vendor/highlight.pack.js"></script>
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/js/vendor/wow.min.js"></script>
